@@ -1,24 +1,11 @@
-# vue-cli-weather-app
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+This api has been used in this project >> https://openweathermap.org/api/one-call-api
+<br>
+<br>
+Tech stacks;
+* Vue 3
+* Vuex
+* Axios
+* SCSS
+<br>
+<br>
+Demo: https://vue-cli-weather-app.vercel.app/
