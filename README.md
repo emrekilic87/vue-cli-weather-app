@@ -7,5 +7,4 @@ Tech stacks;
 * Axios
 * SCSS
 <br>
-<br>
 Demo: https://vue-cli-weather-app.vercel.app/
