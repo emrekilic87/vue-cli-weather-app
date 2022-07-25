@@ -1,0 +1,45 @@
+.current-infos {
+  &__location-name {
+    margin-bottom: 0;
+  }
+  &__icon-area {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  &__icon {
+    width: 70px;
+  }
+  &__desc {
+    color: #565a9c;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  &__temp-area {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+
+    &-title {
+      display: inline-block;
+      margin-right: 10px;
+      margin-bottom: 1em;
+    }
+  }
+  &__toggle-button {
+    margin: 3em 0 2em;
+    background-color: #2e5965;
+    padding: 12px 18px;
+  }
+}
+
+.next-seven-days-area {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}

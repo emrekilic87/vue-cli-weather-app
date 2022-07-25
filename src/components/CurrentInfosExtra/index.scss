@@ -1,0 +1,11 @@
+.current-infos-extra {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+
+  &-title {
+    margin-right: 10px;
+  }
+}
