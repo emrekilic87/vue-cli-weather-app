@@ -1,6 +1,6 @@
 <template>
   <div class="search">
-    <div class="loading-bar" v-if="!loading">
+    <div class="loading-bar" v-if="loading">
       <Circle8 />
     </div>
     <input
@@ -36,7 +36,7 @@ export default {
         position: "top-right",
         duration: 3000,
       },
-      loading: false,
+      loading: true,
     };
   },
 
@@ -61,6 +61,9 @@ export default {
       },
       (error) => {
         console.log(error);
+        setTimeout(() => {
+          this.loading = false;
+        }, 2500);
       }
     );
   },
@@ -73,7 +76,7 @@ export default {
     ]),
 
     search() {
-      this.loading = false;
+      this.loading = true;
       if (this.locationName == "")
         return this.$toast.error(`Please Enter Location`, this.toastOptions);
       this.fetchLocation(this.locationName).then((res) => {
@@ -84,7 +87,7 @@ export default {
           );
         this.currentInfosDatas(res.lat, res.lon);
         setTimeout(() => {
-          this.loading = true;
+          this.loading = false;
         }, 1000);
       });
     },
